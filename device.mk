@@ -37,7 +37,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     SettingsOverlayM2012K11AG \
-    SettingsOverlayM2012K11AI
+    SettingsOverlayM2012K11AI \
+    WifiOverlayM2012K11AC \
+    WifiOverlayM2012K11AG \
+    WifiOverlayM2012K11AI
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
