@@ -13,6 +13,7 @@ static const variant_info_t aliothin_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
 
+    .mod_device = "alioth_global",
     .name = "alioth_global",
     .brand = "Mi",
     .device = "aliothin",
@@ -27,6 +28,7 @@ static const variant_info_t alioth_global_info = {
     .hwc_value = "GLOBAL",
     .sku_value = "",
 
+    .mod_device = "alioth_global",
     .name = "alioth_global",
     .brand = "POCO",
     .device = "alioth",
@@ -41,6 +43,7 @@ static const variant_info_t alioth_info = {
     .hwc_value = "",
     .sku_value = "",
 
+    .mod_device = "alioth_global",
     .name = "alioth_global",
     .brand = "Redmi",
     .device = "alioth",
