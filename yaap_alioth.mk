@@ -13,6 +13,9 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 TARGET_BUILD_GAPPS := true
 TARGET_ENABLE_BLUR := true
 
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
