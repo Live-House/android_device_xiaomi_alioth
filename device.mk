@@ -34,6 +34,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Platform
+TARGET_BOARD_PLATFORM := kona
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     SettingsOverlayM2012K11AC \
