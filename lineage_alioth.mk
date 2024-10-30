@@ -23,7 +23,7 @@ TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 WITH_GMS := true
 TARGET_CORE_GMS := true
 TARGET_CORE_GMS_EXTRAS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
