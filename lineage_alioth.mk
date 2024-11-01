@@ -13,8 +13,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # risingOS Building Flags
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon 870 5G" \
-    RISING_MAINTAINER="bxySo"
+    RisingChipset="Snapdragon 870 5G" \
+    RisingMaintainer="bxySo"
 
 TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
