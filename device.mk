@@ -36,6 +36,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    SettingsOverlayM2012K11AC \
     SettingsOverlayM2012K11AG \
     SettingsOverlayM2012K11AI \
     SettingsProviderM2012K11AC \
