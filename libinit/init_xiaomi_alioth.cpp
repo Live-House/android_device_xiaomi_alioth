@@ -20,6 +20,7 @@ static const variant_info_t aliothin_info = {
     .marketname = "Mi 11X",
     .model = "M2012K11AI",
     .build_fingerprint = "Mi/aliothin/aliothin:13/TKQ1.221114.001/V816.0.2.0.TKHINXM:user/release-keys",
+    .hwsku = "aliothin",
 
     .nfc = false,
 };
@@ -35,6 +36,7 @@ static const variant_info_t alioth_global_info = {
     .marketname = "POCO F3",
     .model = "M2012K11AG",
     .build_fingerprint = "POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.3.0.TKHMIXM:user/release-keys",
+    .hwsku = "alioth",
 
     .nfc = true,
 };
@@ -50,6 +52,7 @@ static const variant_info_t alioth_info = {
     .marketname = "Redmi K40",
     .model = "M2012K11AC",
     .build_fingerprint = "Redmi/alioth/alioth:13/TKQ1.221114.001/V816.0.6.0.TKHCNXM:user/release-keys",
+    .hwsku = "alioth",
 
     .nfc = true,
 };
