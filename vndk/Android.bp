@@ -1,0 +1,21 @@
+cc_prebuilt_library_shared {
+    name: "libaudioroute-v34",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    compile_multilib: "32",
+    srcs: ["v34/arm/libaudioroute-v34.so"],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libexpat",
+        "libtinyalsa",
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    check_elf_files: false,
+}

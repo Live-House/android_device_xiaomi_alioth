@@ -22,6 +22,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .add_line_if_missing('LEGACY_MIFARE_READER=1'),
     'vendor/lib/hw/audio.primary.alioth.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so')
         .binary_regex_replace(
             b'/vendor/lib/liba2dpoffload.so',
             b'liba2dpoffload_alioth.so\x00\x00\x00\x00\x00',
@@ -58,9 +59,12 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_buf_attr'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .binary_regex_replace(b'\x9A\x0A\x00\x94', b'\x1F\x20\x03\xD5'),
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
 }  # fmt: skip
 
 namespace_imports = [
+    'device/xiaomi/alioth',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8250',
     'vendor/qcom/opensource/display',
